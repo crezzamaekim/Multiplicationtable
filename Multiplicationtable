@@ -1,0 +1,26 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1 style="font-family:verdana;">MULTIPLICATION TABLE</h1>
+<table width="300px" cellspacing="1px" cellpadding="1px" border="1px">
+<?php
+    for($R = 0; $R <= 10; $R++) {
+        echo "<tr>";
+        for($C = 0; $C <= 10; $C++) {
+            $p = $C * $R;
+            $t1 = $C + $R;
+
+            if ($t1 % 2 == 0) {
+                echo "<td height='20px' width='30px' bgcolor='yellow'>$p</td>";
+            } else {
+                echo "<td height='20px' width='30px' bgcolor='red'>$p</td>";
+            }
+        }
+        echo "</tr>";
+    }   
+?>
+</table>
+</body>
+</html>
